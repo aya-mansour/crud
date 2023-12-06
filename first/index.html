@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aya mansour</title>
+   
+    <link rel="stylesheet" href="aya.css">
+    
+
+
+</head>
+<body>
+    <div class="crud">
+        <div class="head">
+           <h2>crud</h2> 
+           <p>product management system</p>
+
+        </div>
+
+
+        <div class="inputs">
+           <input placeholder="title" type="text" id="title" >
+           <div class="price">
+               <input onkeyup="getTotal()" type="number" id="price" placeholder="price">
+               <input onkeyup="getTotal()" type="number" id="taxis" placeholder="taxis">
+               <input onkeyup="getTotal()" type="number" id="ads" placeholder="ads">
+               <input onkeyup="getTotal()" type="number" id="discound" placeholder="discound">
+               <small id="total"></small>
+               
+            </div>
+            <input type="number" id="count" placeholder="count">
+            <input type="text" id="category" placeholder="category">
+            <button id="submit">creat</button>
+
+        </div>
+
+
+        <div class="outputs">
+            <div class="searchblock">
+                <input type="text" id="search" placeholder="search">
+                <div class="btnsearch">
+                    <button id="search title">search by title</button>
+                    <button id="search category">search by category</button>
+
+                </div>
+            </div>
+           
+            <table>
+                <tr>
+                    <th>id</th>
+                    <th>title</th>
+                    <th>price</th>
+                    <th>taxes</th>
+                    <th>ads</th>
+                    <th>discound</th>
+                    <th>total</th>
+                    <th>category</th>
+                    <th>update</th>
+                    <th>delete</th>
+                </tr>
+                <tbody id="tbody">
+                  
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+     <script src = "aya.js">  </script>
+</body>
+</html>
